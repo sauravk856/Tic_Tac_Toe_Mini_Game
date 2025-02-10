@@ -12,7 +12,7 @@ def draw_board(board):
 def user_move(board,user_type):
     user_choice = int(input("Choose your space between 1-9: ")) - 1
     if (board[user_choice] != ' '):
-        print('Sapce is taken, Try Again')
+        print('Space is taken, Try Again')
         user_move(board,user_type)
     else:
         board[user_choice] = user_type
